@@ -23,7 +23,6 @@ function makePath(qrcode, margin, reverse) {
 
 export default function QRCode({
   bgColor = '#fff',
-  cellClassPrefix,
   fgColor = '#000',
   level = 'L',
   margin = 0,
@@ -43,20 +42,16 @@ export default function QRCode({
   const bgPath = makePath(qrcode, margin, true);
   const fgPath = makePath(qrcode, margin);
 
-  const bgClassName = cellClassPrefix && `${cellClassPrefix} ${cellClassPrefix}-empty`;
-  const fgClassName = cellClassPrefix && `${cellClassPrefix} ${cellClassPrefix}-filled`;
-
   return (
-    <Svg shapeRendering="crispEdges" viewBox={`0 0 ${size} ${size}`} {...otherProps}>
-      <Path d={bgPath} fill={bgColor} className={bgClassName} />
-      <Path d={fgPath} fill={fgColor} className={fgClassName} />
+    <Svg viewBox={`0 0 ${size} ${size}`} {...otherProps}>
+      <Path d={bgPath} fill={bgColor} />
+      <Path d={fgPath} fill={fgColor} />
     </Svg>
   );
 }
 
 QRCode.propTypes = {
   bgColor: PropTypes.string,
-  cellClassPrefix: PropTypes.string,
   fgColor: PropTypes.string,
   level: PropTypes.oneOf(['L', 'M', 'Q', 'H']),
   margin: PropTypes.number,
