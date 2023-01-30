@@ -2,13 +2,16 @@
   "compilerOptions": {
     "declaration": true,
     "esModuleInterop": true,
+    "importsNotUsedAsValues": "error",
     "isolatedModules": true,
     "jsx": "react-native",
     "lib": ["es6"],
     "moduleResolution": "node",
+    "noUncheckedIndexedAccess": true,
     "outDir": "dist",
     "skipLibCheck": true,
     "strict": true,
+    "strictNullChecks": true,
     "target": "es5"
   },
   "include": ["src"]
