@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 import qrcodeGenerator from 'qrcode-generator';
 import { Svg, Path } from 'react-native-svg';
 
-type TypeNumber =
+import type { SvgProps } from 'react-native-svg';
+
+export type TypeNumber =
   | 0 // Automatic type number
   | 1
   | 2
@@ -46,7 +48,7 @@ type TypeNumber =
   | 39
   | 40;
 
-type ErrorCorrectionLevel = 'L' | 'M' | 'Q' | 'H';
+export type ErrorCorrectionLevel = 'L' | 'M' | 'Q' | 'H';
 
 type QrCodeProps = {
   bgColor?: string;
@@ -84,7 +86,7 @@ export default function QRCode({
   type = 0,
   value = '',
   ...otherProps
-}: QrCodeProps) {
+}: QrCodeProps & Omit<SvgProps, keyof QrCodeProps>) {
   const qrcode = useMemo(() => {
     const qrcode = qrcodeGenerator(type, level);
     qrcode.addData(value);
