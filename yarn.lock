@@ -136,12 +136,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-native@npm:^0.70.8":
-  version: 0.70.13
-  resolution: "@types/react-native@npm:0.70.13"
+"@types/react-native@npm:^0.71.6":
+  version: 0.71.6
+  resolution: "@types/react-native@npm:0.71.6"
   dependencies:
     "@types/react": "*"
-  checksum: 2ff157f24b5e7c3c3bf22556b4ea206029e0f4c52607c77f1ff0f91228478e11b6cd4b76322db8ea0be3d118b39b0bde7893e43013fff3e3191866a064857d8c
+  checksum: 067325c549e7181c73cdf8da1cb7bdef226124d91c3f72fcc2fb8b3c98a2d184f74a16ba627e3192253103bd651e8238d0e722b93f762b3f1a3f5b96773ec7a5
   languageName: node
   linkType: hard
 
@@ -296,7 +296,7 @@ __metadata:
   resolution: "@wojtekmaj/react-native-qr-svg@workspace:."
   dependencies:
     "@types/react": "*"
-    "@types/react-native": ^0.70.8
+    "@types/react-native": ^0.71.6
     eslint: ^8.26.0
     eslint-config-wojtekmaj: ^0.8.3
     husky: ^8.0.0
