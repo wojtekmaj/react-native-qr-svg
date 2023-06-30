@@ -54,9 +54,9 @@ export type QrSvgProps = {
   bgColor?: string;
   cellClassPrefix?: string;
   fgColor?: string;
-  level: ErrorCorrectionLevel;
-  margin: number;
-  type: TypeNumber;
+  level?: ErrorCorrectionLevel;
+  margin?: number;
+  type?: TypeNumber;
   value: string;
 };
 
