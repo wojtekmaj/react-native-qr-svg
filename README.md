@@ -31,7 +31,7 @@ First, ensure that you have `react-native-svg@^12.0.0` or `react-native-svg@^13.
 
 Here's an example of basic usage:
 
-```js
+```tsx
 import { View } from 'react-native';
 import QrSvg from '@wojtekmaj/react-native-qr-svg';
 
