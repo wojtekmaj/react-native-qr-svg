@@ -110,7 +110,7 @@ export default function QrSvg({
 QrSvg.propTypes = {
   bgColor: PropTypes.string,
   fgColor: PropTypes.string,
-  level: PropTypes.oneOf(['L', 'M', 'Q', 'H']),
+  level: PropTypes.oneOf(['L', 'M', 'Q', 'H'] as const),
   margin: PropTypes.number,
   type: PropTypes.number,
   value: PropTypes.string.isRequired,
