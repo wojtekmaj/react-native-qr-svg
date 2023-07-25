@@ -78,7 +78,7 @@ function makePath(qrcode: QRCode, margin: number, reverse?: boolean) {
   return d;
 }
 
-export default function QrSvg({
+const QrSvg: React.FC<QrSvgProps & Omit<SvgProps, keyof QrSvgProps>> = function QrSvg({
   bgColor = '#fff',
   fgColor = '#000',
   level = 'L',
@@ -86,7 +86,7 @@ export default function QrSvg({
   type = 0,
   value = '',
   ...otherProps
-}: QrSvgProps & Omit<SvgProps, keyof QrSvgProps>) {
+}) {
   const qrcode = useMemo(() => {
     const qrcode = qrcodeGenerator(type, level);
     qrcode.addData(value);
@@ -105,7 +105,7 @@ export default function QrSvg({
       <Path d={fgPath} fill={fgColor} />
     </Svg>
   );
-}
+};
 
 QrSvg.propTypes = {
   bgColor: PropTypes.string,
@@ -118,3 +118,5 @@ QrSvg.propTypes = {
   ] as const),
   value: PropTypes.string.isRequired,
 };
+
+export default QrSvg;
