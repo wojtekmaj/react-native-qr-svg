@@ -10,7 +10,6 @@
     "outDir": "dist",
     "skipLibCheck": true,
     "strict": true,
-    "strictNullChecks": true,
     "target": "es5"
   },
   "include": ["src"]
