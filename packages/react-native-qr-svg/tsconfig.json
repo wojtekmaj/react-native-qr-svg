@@ -5,12 +5,14 @@
     "isolatedModules": true,
     "jsx": "react-native",
     "lib": ["es6"],
+    "module": "esnext",
     "moduleResolution": "node",
     "noUncheckedIndexedAccess": true,
     "outDir": "dist",
     "skipLibCheck": true,
     "strict": true,
-    "target": "es5"
+    "target": "es5",
+    "verbatimModuleSyntax": true
   },
   "include": ["src"]
 }
