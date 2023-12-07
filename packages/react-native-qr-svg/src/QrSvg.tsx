@@ -52,7 +52,6 @@ export type ErrorCorrectionLevel = 'L' | 'M' | 'Q' | 'H';
 
 export type QrSvgProps = {
   bgColor?: string;
-  cellClassPrefix?: string;
   fgColor?: string;
   level?: ErrorCorrectionLevel;
   margin?: number;
