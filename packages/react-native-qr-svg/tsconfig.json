@@ -6,7 +6,6 @@
     "jsx": "react-native",
     "lib": ["es6"],
     "module": "nodenext",
-    "moduleResolution": "nodenext",
     "noEmit": true,
     "noUncheckedIndexedAccess": true,
     "outDir": "dist",
