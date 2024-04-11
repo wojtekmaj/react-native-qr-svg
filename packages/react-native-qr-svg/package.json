@@ -44,7 +44,7 @@
     "@types/react": "*",
     "@types/react-native": "^0.70.8",
     "eslint": "^8.56.0",
-    "eslint-config-wojtekmaj": "^0.11.0",
+    "eslint-config-wojtekmaj": "^1.0.0",
     "prettier": "^3.2.0",
     "react": "^18.2.0",
     "react-native-svg": "^14.0.0",
