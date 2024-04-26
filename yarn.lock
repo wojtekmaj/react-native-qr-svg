@@ -319,7 +319,6 @@ __metadata:
     eslint: "npm:^8.56.0"
     eslint-config-wojtekmaj: "npm:^1.0.0"
     prettier: "npm:^3.2.0"
-    prop-types: "npm:^15.6.0"
     qrcode-generator: "npm:^1.4.4"
     react: "npm:^18.2.0"
     react-native-svg: "npm:^15.0.0"
@@ -1845,7 +1844,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.6.0, prop-types@npm:^15.8.1":
+"prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:

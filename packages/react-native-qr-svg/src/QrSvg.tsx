@@ -1,5 +1,4 @@
 import { useMemo } from 'react';
-import PropTypes from 'prop-types';
 import qrcodeGenerator from 'qrcode-generator';
 import { Svg, Path } from 'react-native-svg';
 
@@ -141,18 +140,6 @@ const QrSvg: React.FC<QrSvgProps & Omit<SvgProps, keyof QrSvgProps>> = function 
       <Path d={fgPath} fill={fgColor} />
     </Svg>
   );
-};
-
-QrSvg.propTypes = {
-  bgColor: PropTypes.string,
-  fgColor: PropTypes.string,
-  level: PropTypes.oneOf(['L', 'M', 'Q', 'H'] as const),
-  margin: PropTypes.number,
-  type: PropTypes.oneOf([
-    0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25,
-    26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40,
-  ] as const),
-  value: PropTypes.string.isRequired,
 };
 
 export default QrSvg;
