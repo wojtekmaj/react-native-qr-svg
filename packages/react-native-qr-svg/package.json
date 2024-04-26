@@ -1,6 +1,6 @@
 {
   "name": "@wojtekmaj/react-native-qr-svg",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "Render QR codes as SVG in your React Native app",
   "type": "module",
   "sideEffects": false,
