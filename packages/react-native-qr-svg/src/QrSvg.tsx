@@ -135,7 +135,7 @@ export default function QrSvg({
   const fgPath = makePath(qrcode, margin);
 
   return (
-    <Svg viewBox={`0 0 ${size} ${size}`} {...otherProps}>
+    <Svg accessibilityLabel={value} viewBox={`0 0 ${size} ${size}`} {...otherProps}>
       <Path d={bgPath} fill={bgColor} />
       <Path d={fgPath} fill={fgColor} />
     </Svg>

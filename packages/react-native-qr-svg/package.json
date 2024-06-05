@@ -18,8 +18,8 @@
     "build-cjs": "tsc --project tsconfig.build.json --outDir dist/cjs --module commonjs --moduleResolution node --verbatimModuleSyntax false",
     "build-cjs-package": "echo '{\n  \"type\": \"commonjs\"\n}' > dist/cjs/package.json",
     "clean": "rimraf dist",
-    "format": "prettier --check . --cache",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "format": "biome format",
+    "lint": "biome lint",
     "prepack": "yarn clean && yarn build",
     "test": "yarn lint && yarn tsc && yarn format",
     "tsc": "tsc",
@@ -40,11 +40,9 @@
     "qrcode-generator": "^1.4.4"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.8.0",
     "@types/react": "*",
     "@types/react-native": "^0.70.8",
-    "eslint": "^8.56.0",
-    "eslint-config-wojtekmaj": "^1.0.0",
-    "prettier": "^3.2.0",
     "react": "^18.2.0",
     "react-native-svg": "^15.0.0",
     "rimraf": "^3.0.0",
