@@ -121,7 +121,7 @@ export default function QrSvg({
   type = 0,
   value = '',
   ...otherProps
-}: QrSvgProps & Omit<SvgProps, keyof QrSvgProps>) {
+}: QrSvgProps & Omit<SvgProps, keyof QrSvgProps>): React.ReactElement {
   const qrcode = useMemo(() => {
     const qrcode = qrcodeGenerator(type, level);
     qrcode.addData(value);
