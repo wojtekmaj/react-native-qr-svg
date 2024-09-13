@@ -5,7 +5,7 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"@biomejs/biome@npm:^1.8.3":
+"@biomejs/biome@npm:1.8.3":
   version: 1.8.3
   resolution: "@biomejs/biome@npm:1.8.3"
   dependencies:
@@ -163,7 +163,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@wojtekmaj/react-native-qr-svg@workspace:packages/react-native-qr-svg"
   dependencies:
-    "@biomejs/biome": "npm:^1.8.3"
+    "@biomejs/biome": "npm:1.8.3"
     "@types/react": "npm:*"
     "@types/react-native": "npm:^0.70.8"
     qrcode-generator: "npm:^1.4.4"
