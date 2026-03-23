@@ -5,16 +5,19 @@
     "isolatedDeclarations": true,
     "isolatedModules": true,
     "jsx": "react-native",
-    "lib": ["es6"],
+    "lib": [
+      "es6"
+    ],
     "module": "nodenext",
     "moduleDetection": "force",
     "noEmit": true,
     "noUncheckedIndexedAccess": true,
     "outDir": "dist",
     "skipLibCheck": true,
-    "strict": true,
     "target": "es2018",
     "verbatimModuleSyntax": true
   },
-  "exclude": ["dist"]
+  "exclude": [
+    "dist"
+  ]
 }
