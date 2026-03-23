@@ -5,9 +5,7 @@
     "isolatedDeclarations": true,
     "isolatedModules": true,
     "jsx": "react-native",
-    "lib": [
-      "es6"
-    ],
+    "lib": ["es6"],
     "module": "nodenext",
     "moduleDetection": "force",
     "noEmit": true,
@@ -17,7 +15,5 @@
     "target": "es2018",
     "verbatimModuleSyntax": true
   },
-  "exclude": [
-    "dist"
-  ]
+  "exclude": ["dist"]
 }
