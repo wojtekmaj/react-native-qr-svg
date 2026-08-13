@@ -9,7 +9,7 @@ Render QR codes as SVG in your React Native app.
 - Ensure that you have `react-native-svg@^12.0.0` or `react-native-svg@^13.0.01` installed.
 - Install by executing `npm install @wojtekmaj/react-native-qr-svg` or `yarn add @wojtekmaj/react-native-qr-svg`.
 - Import by adding `import QrSvg from '@wojtekmaj/react-native-qr-svg'`.
-- Use by adding `<QrSvg value="Hello world" />`.
+- Use by adding `<QrSvg margin={4} value="Hello world" />`.
 
 ## Demo
 
@@ -38,7 +38,7 @@ import QrSvg from '@wojtekmaj/react-native-qr-svg';
 function MyApp() {
   return (
     <View>
-      <QrSvg value="Hello world" />
+      <QrSvg margin={4} value="Hello world" />
     </View>
   );
 }
@@ -57,7 +57,7 @@ Renders QR code as SVG.
 | bgColor   | Background color.                                                                                                       | `"white"`     | <ul><li>Color name: `"beige"`</li><li>Color hex: `"#fefefe"`</li></ul> |
 | fgColor   | Foreground color.                                                                                                       | `"black"`     | <ul><li>Color name: `"black"`</li><li>Color hex: `"#000000"`</li></ul> |
 | level     | [Error correction level](https://en.wikipedia.org/wiki/QR_code#Error_correction). Can be `"L"`, `"M"`, `"Q"` and `"H"`. | `"L"`         | `"M"`                                                                  |
-| margin    | Margin in pixels.                                                                                                       | `0`           | `4`                                                                    |
+| margin    | Quiet zone around the QR code, in modules. A value of 4 is recommended.                                                 | `0`           | `4`                                                                    |
 | type      | Type (size). Can be any number from 0 to 40. Set to `0` or leave as undefined to use the smallest possible size.        | `0`           | `10`                                                                   |
 | value     | Value to render.                                                                                                        | n/a           | `"Hello world"`                                                        |
 
